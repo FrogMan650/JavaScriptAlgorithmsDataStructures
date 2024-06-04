@@ -1,0 +1,78 @@
+*, ::before, ::after {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light-green: #074500;
+    --dark-green: #042400;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-green);
+    gap: 20px;
+}
+
+img {
+    width: 40vw;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2, h3 {
+    font-size: 3rem;
+}
+
+div {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-green);
+    padding: 10px;
+    width: 60%;
+    gap: 10px;
+}
+
+#output {
+    height: 7%;
+    opacity: 0;
+}
+
+#number {
+    background-color: var(--dark-green);
+    border: 1px solid white;
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#convert-btn {
+    width: 20%;
+    height: 40px;
+    background-color: var(--dark-green);
+    border: 1px solid white;
+    font-size: 2rem;
+}
+
+#convert-btn:hover {
+    cursor: pointer;
+    background-color: var(--light-green);
+}
+
